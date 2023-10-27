@@ -1,0 +1,27 @@
+<div class="modal fade" id="coinsEnfant" tabindex="-1" aria-labelledby="coinsEnfantLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="coinsEnfantLabel">{{ coinsEnfant?.name }}</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <p>Classement: {{ coinsEnfant?.rank }}</p>
+          <p>Symbole: {{ coinsEnfant?.symbol }}</p>
+          <p>Supply: {{ coinsEnfant?.supply | number: '1.0-0'}}</p>
+          <p *ngIf="coinsEnfant?.maxSupply !== null">Max supply : {{coinsEnfant?.maxSupply | number: '1.0-0'}}</p>
+          <p *ngIf="coinsEnfant?.maxSupply == null" class="text-danger">Pas d'offre max</p>
+          <p>Market Cap (USD): {{ coinsEnfant?.marketCapUsd | number: '1.0-0' }}$</p>
+          <p>24hr Volume (USD): {{ coinsEnfant?.volumeUsd24Hr | number: '1.0-0' }}$</p>
+          <p>Prix (USD): {{ coinsEnfant?.priceUsd | number: '1.0-0' }} $</p>
+          <p>Change (24hr): {{ coinsEnfant?.changePercent24Hr | number: '1.1-2' }} %</p>
+          <p>VWAP (24hr): {{ coinsEnfant?.vwap24Hr }}</p>
+        </div>
+
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
