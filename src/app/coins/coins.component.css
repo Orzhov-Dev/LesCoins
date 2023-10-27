@@ -1,5 +1,5 @@
   .card {
-    height: 28rem !important;
+    height: 20rem !important;
     width: 95%;
     background: #222;
     border: 1px solid #dd2476;
@@ -12,8 +12,13 @@
   }
   
   .card-body {
-    height: 20rem !important;
+    height: 5rem !important;
     margin-bottom: 5rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-around;
   }
   
   .btn {
@@ -25,6 +30,7 @@
     border-image-source:  var(--gradient) !important; 
     text-decoration: none;
     transition: all .4s ease;
+
   }
   
   .btn:hover, .btn:focus {
