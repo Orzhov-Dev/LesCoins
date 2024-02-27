@@ -41,3 +41,38 @@
     box-shadow: #222 1px 0 10px;
     text-decoration: underline;
   }
+
+  /* Pour rendre la barre de recherche plus réactive */
+.form-group {
+  width: 100%;
+  max-width: 400px; /* Limiter la largeur pour éviter les débordements sur les écrans larges */
+  margin: 0 auto; /* Centrer horizontalement */
+}
+
+/* Pour rendre les cartes de cryptomonnaies plus réactives */
+.card {
+  width: 100%;
+  margin-bottom: 20px; /* Espacement entre les cartes */
+}
+
+/* Styles pour ajuster la taille des boutons sur les tablettes */
+@media (min-width: 740px) and (max-width: 992px) {
+  .card .btn {
+    font-size: 14px; /* Taille de police plus petite */
+    padding: 5px 10px; /* Espacement interne réduit */
+  }
+  
+  .card-body {
+    margin-bottom: 20px; /* Augmente la marge en bas du card-body */
+  }
+
+  .card-text {
+    font-size: 14px; /* Réduit la taille du texte */
+  }
+}
+
+/* Pour rendre les boutons plus réactifs */
+.btn {
+  padding: 10px 20px; /* Espacement interne des boutons */
+  font-size: 16px; /* Taille de police des boutons */
+}

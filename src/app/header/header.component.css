@@ -1,0 +1,14 @@
+.nav-link  {
+    border: 1px solid black;
+    display: flex;
+    flex: space-between;
+}
+
+.nav-pills .nav-link.active {
+    background-color: #000000 !important;
+    display: flex !important;
+    font-weight: bold;
+    color: #dc3545;
+    text-shadow: black ;
+    font-size: larger;
+}

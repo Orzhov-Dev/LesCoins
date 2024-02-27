@@ -1,0 +1,81 @@
+.card {
+    height: 20rem !important;
+    width: 95%;
+    background: #222;
+    border: 1px solid #dd2476;
+    color: rgba(250, 250, 250, 0.8);
+    margin-bottom: 2rem;
+  }
+  .card-header {
+    color: #dd2476;
+    background: rgb(50, 50, 50);
+  }
+  
+  .card-body {
+    height: 5rem !important;
+    margin-bottom: 5rem;
+  }
+
+  .card-footer {
+    display: flex;
+    justify-content: space-around;
+  }
+.container {
+    max-width: 800px; /* Limite la largeur de la page pour une meilleure lisibilité */
+    margin: 0 auto; /* Centre la page horizontalement */
+    padding: 20px; /* Ajoute un peu d'espace autour du contenu */
+  }
+  
+  h2 {
+    font-size: 2rem; /* Taille de police plus grande pour les titres */
+    margin-bottom: 20px; /* Ajoute de l'espace sous le titre */
+  }
+  
+  p {
+    font-size: 1.1rem; /* Taille de police légèrement plus grande pour le texte */
+    line-height: 1.5; /* Espacement entre les lignes pour une meilleure lisibilité */
+    margin-bottom: 20px; /* Ajoute de l'espace sous les paragraphes */
+  }
+  
+  h3 {
+    font-size: 1.5rem; /* Taille de police plus grande pour les sous-titres */
+    margin-top: 30px; /* Ajoute de l'espace au-dessus des sous-titres */
+  }
+  
+  /* Style des boutons */
+  .btn {
+    background-color: #007bff; /* Couleur de fond du bouton */
+    color: #fff; /* Couleur du texte du bouton */
+    border: none; /* Supprime les bordures du bouton */
+    padding: 10px 20px; /* Espacement interne du bouton */
+    font-size: 1rem; /* Taille de police du bouton */
+    border-radius: 5px; /* Arrondi les coins du bouton */
+    cursor: pointer; /* Affiche un curseur pointer au survol du bouton */
+    transition: background-color 0.3s ease; /* Animation de transition douce pour le changement de couleur de fond */
+  }
+  
+  .btn:hover {
+    background-color: #0056b3; /* Changement de couleur de fond au survol */
+  }
+  
+  /* Style de la modale */
+  .modal-content {
+    border-radius: 10px; /* Arrondi les coins de la modale */
+  }
+  
+  /* Style du formulaire */
+  .form-group {
+    margin-bottom: 20px; /* Ajoute de l'espace sous les champs de formulaire */
+  }
+  
+  /* Style de la carte */
+  .card {
+    border-radius: 10px; /* Arrondi les coins de la carte */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère pour la carte */
+    transition: box-shadow 0.3s ease; /* Animation de transition douce pour l'ombre de la carte */
+  }
+  
+  .card:hover {
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); /* Augmente l'ombre au survol de la carte */
+  }
+  

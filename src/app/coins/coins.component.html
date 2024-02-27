@@ -1,4 +1,3 @@
-<!-- Utiliser la boucle *ngFor pour parcourir chaque élément de coins -->
 <div class="container mx-auto mt-4">
   <div class="row">
     <div class="container">
@@ -13,29 +12,30 @@
         </div>
       </div>
     </div>
-
+    
     <br>
-
+    
     <div class="row row-cols-1 row-cols-md-3 g-4">
-        <div *ngFor="let coin of coins | cryptoFilter: searchText">
-          <div class="card">
-            <div class="card-header" >
-              <h3 class="card-title"> <strong> {{ coin.name  | uppercase }} </strong></h3>
-            </div>
-            <div class="card-body">
-              <h4 class="card-subtitle mb-2 font-weight-bold">{{ coin.symbol }}</h4>
-              <br>
-              <p class="card-text">Classement: {{ coin.rank }}</p>
-              <p class="card-text">Prix actuel: {{ coin.priceUsd | number: '1.0-0'}} </p>
-              <p class="card-text">Variation (dernières 24h): {{ coin.changePercent24Hr | number: '1.1-2' }} %</p>
+      <!-- Utiliser la boucle *ngFor pour parcourir chaque élément de coins -->
+      <div *ngFor="let coin of coins | cryptoFilter: searchText">
+        <div class="card">
+          <div class="card-header" >
+            <h3 class="card-title"> <strong> {{ coin.name  | uppercase }} </strong></h3>
+          </div>
+          <div class="card-body">
+            <h4 class="card-subtitle mb-2 font-weight-bold">{{ coin.symbol }}</h4>
             <br>
-            </div>
-            <div class="card-footer d-flex ">
-              <button class="btn mr-2 "data-bs-toggle="modal" data-bs-target="#coinsEnfant" (click)="selectCoin(coin)"><i class="fab fa-github"></i>Ouvrir la modale</button>
-              <a href="{{ coin.explorer }}" class="btn"><i class="fab fa-github"></i>Site</a>
-            </div>
+            <p class="card-text">Classement: {{ coin.rank }}</p>
+            <p class="card-text">Prix actuel: {{ coin.priceUsd | number: '1.0-0'}} </p>
+            <p class="card-text">Variation (dernières 24h): {{ coin.changePercent24Hr | number: '1.1-2' }} %</p>
+            <br>
+          </div>
+          <div class="card-footer d-flex ">
+            <button class="btn mr-2 "data-bs-toggle="modal" data-bs-target="#coinsEnfant" (click)="selectCoin(coin)"><i class="fab fa-github"></i>Ouvrir la modale</button>
+            <a href="{{ coin.explorer }}" class="btn"><i class="fab fa-github"></i>Site</a>
           </div>
         </div>
+      </div>
       </div>
       
       

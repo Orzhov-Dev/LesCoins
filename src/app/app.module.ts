@@ -12,6 +12,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { CryptoFilterPipe } from './pipes/crypto-filter.pipe';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { FooterComponent } from './footer/footer.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     CoinsModalComponent,
     HeaderComponent,
     CryptoFilterPipe,
-    FooterComponent
+    FooterComponent,
+    HomeComponent
   ],
   imports: [
     BrowserModule,
