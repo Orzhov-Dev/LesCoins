@@ -1,4 +1,4 @@
-.card {
+  .card {
     height: 20rem !important;
     width: 95%;
     background: #222;
@@ -20,7 +20,7 @@
     display: flex;
     justify-content: space-around;
   }
-.container {
+  .container {
     max-width: 800px; /* Limite la largeur de la page pour une meilleure lisibilité */
     margin: 0 auto; /* Centre la page horizontalement */
     padding: 20px; /* Ajoute un peu d'espace autour du contenu */
